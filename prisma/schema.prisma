@@ -32,7 +32,7 @@ model Book {
   id        String   @id @default(uuid())
   title     String
   author    String
-  price     Float?   @default(0)
+  price     Float?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -64,4 +64,6 @@ model BookstoreBook {
   //! Relations
   bookstore Bookstore @relation(fields: [bookstoreId], references: [id])
   book      Book      @relation(fields: [bookId], references: [id])
+
+  @@unique([bookstoreId, bookId], map: "unique_bookstore_book")
 }
