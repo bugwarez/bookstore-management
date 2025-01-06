@@ -17,7 +17,11 @@ https://github.com/bugwarez/bookstore-management.git
 ```
 pnpm install
 ```
-3. #### Run the project
+3. #### run prisma generate
+```
+npx prisma generate
+```
+4. #### Run the project
 ```
 pnpm run start:dev
 ```
