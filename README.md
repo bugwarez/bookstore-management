@@ -11,7 +11,7 @@ It contains Authentication, Authorization, Role Management and bookstore managem
 ## Setup
 1. #### Clone the Project
 ```
-https://github.com/bugwarez/bookstore-management.git
+git clone https://github.com/bugwarez/bookstore-management.git
 ```
 2. #### Install the dependencies
 ```
